@@ -1,0 +1,20 @@
+.container-button{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    display: flex;
+    justify-content:center;
+}
+
+.minusbtn {
+    flex-grow: auto;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.plusbtn{
+    flex-grow: auto;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
