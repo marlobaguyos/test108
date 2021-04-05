@@ -27,15 +27,19 @@ class Product extends Component {
           </div>
         </div>
         <hr className="addHR"></hr>
-        <QuantityPicker></QuantityPicker>
+        <QuantityPicker onValueChange={this.handleQuantityChange}></QuantityPicker>
         <button onClick={this.handleAddToCart} className="btn btn-md btn-dark  active addToCart">Add</button>
       </div>
     );
   }
 
+  handleQuantityChange = () => {
+    console.log("Quantity Changed");
+  };
+
   handleAddToCart = () => {
     console.log("Add 2 cart");
-  }
+  };
 }
 
 export default Product;

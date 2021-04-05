@@ -24,6 +24,8 @@ class QuantityPicker extends Component {
         
         let current = this.state.quantity + 1; // read from the state 
         this.setState({quantity:current});
+
+        this.props.onValueChange();
     }
 
     decreaseQuantity = () => {
@@ -33,6 +35,7 @@ class QuantityPicker extends Component {
         if(current > 0){
             this.setState({quantity:current});
         }
+        this.props.onValueChange();
     }
 }
 
