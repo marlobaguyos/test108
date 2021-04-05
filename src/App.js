@@ -13,11 +13,11 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <NavBar></NavBar>
-
+  
         <Switch>
-          <Home></Home>
             <Route path="/home" component={Home}></Route>
             <Route path="/catalog" component={Catalog}></Route>
+            
         </Switch>
         
         <Footer></Footer>

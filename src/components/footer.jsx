@@ -14,7 +14,7 @@ class Footer extends Component {
                     <label className="footer-name">Marlo Baguyos.</label>
                 </div> */}
         <div>
-          <nav className="navbar navbar-expand-lg navbar-light bg-light navbar navbar-dark bg-dark fixed-bottom">
+          <footer className="navbar navbar-expand-lg navbar-light bg-light navbar navbar-dark bg-dark fixed-bottom">
             <div className="container-fluid">
               <div>
                 <p className="navbar-brand">Lapu Lapu</p>
@@ -34,7 +34,7 @@ class Footer extends Component {
                 </ul>
               </div>
             </div>
-          </nav>
+          </footer>
         </div>
       </React.Fragment>
     );
