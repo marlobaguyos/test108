@@ -39,14 +39,8 @@ class About extends Component {
   };
 
   handleButtonClick = () => {
-    if(this.state.infoVisible = true){
-      this.setState({infoVisible: true})
-    }
-    else {
-    this.setState({infoVisible: false})
-    }
-  };
-  
+    this.setState({infoVisible:true});
+  }
 }
 export default About;
 
