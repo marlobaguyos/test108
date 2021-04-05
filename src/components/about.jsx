@@ -2,6 +2,10 @@ import React, { Component } from "react";
 import "./css/about.css";
 
 class About extends Component {
+  state = {
+    infoVisible: false,
+  };
+
   render() {
     return (
       <div>
@@ -9,11 +13,23 @@ class About extends Component {
           <h1 className="display-4">Marlo Baguyos</h1>
           <p className="lead">This is an FSDI project on React</p>
           <hr className="my-4"></hr>
+
+          {
+            this.state.infoVisible ? (
+              <div>
+                <label className="lead">Email: marlo.baguyos@sdgku.edu</label>
+                <label className="lead">Phone: marlo.baguyos@sdgku.edu</label>
+              </div>
+            ) : (
+              <label>Click for more info</label>
+            )
+            
+
+          }
           <div className="aboutDiv">
-            <p className="lead">Email: marlo.baguyos@sdgku.edu</p>
-            <p className="lead">Phone: marlo.baguyos@sdgku.edu</p>
+            
           </div>
-          <a onClick={this.handleButtonClick} className="btn btn-primary btn-lg" href="/about" role="button" >Learn more</a>
+          <a onClick={this.handleButtonClick} className="btn btn-primary btn-lg" href="#" role="button" >Learn more</a>
         </div>
       </div>
     );
@@ -21,7 +37,7 @@ class About extends Component {
 
 
   handleButtonClick = () => {
-    console.log("button is clicked")
+    console.log("More Info")
       
   }
   
