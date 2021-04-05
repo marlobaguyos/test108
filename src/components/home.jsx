@@ -81,10 +81,6 @@ class Home extends Component {
             className="image"
           ></img>
           <img
-            src={"/images/products/product-4.jpg"}
-            className="image"
-          ></img>
-          <img
             src={"/images/products/product-5.jpg"}
             className="image"
           ></img>
