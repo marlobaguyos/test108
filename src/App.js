@@ -5,17 +5,22 @@ import Footer from './components/footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
 import Catalog from './components/catalog';
+import Home from './components/home';
+import {BrowserRouter} from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <NavBar></NavBar>
+    <BrowserRouter>
+      <div className="App">
+        <NavBar></NavBar>
 
-      <Catalog></Catalog>
+        <Home></Home>
+        <Catalog></Catalog>
 
-      
-      <Footer></Footer>
-    </div>
+        
+        <Footer></Footer>
+      </div>
+    </BrowserRouter>
   );
 }
 
