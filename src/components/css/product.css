@@ -1,13 +1,41 @@
 .product{
-  border: 1px solid tomato;
+  border: 1px solid rgb(47, 45, 45);
   display: inline-block;
-  width: 250px;
-  height: 350px;
-  margin-left: 2rem;
-  margin-right:2rem;
+  width: 350px;
+  height: 600px;
+  margin-top: 4rem;
+  margin-left: 1rem;
+  border-radius:10px;
+
 }
 
-.image{
+.product .image{
   margin-top: 1rem;
   border-radius: 10px;
+  width: 300px;
+  height: 320px;
+}
+
+
+.product .labels label{
+  display: flex;
+  flex-direction: row;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.description {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 0px;
+  font-size:2rem;
+}
+
+.total,
+.price {
+  font-weight: bold;
+  margin-bottom: 0px;
+  margin-top:0px;
+  font-size:1rem;
 }

@@ -4,30 +4,16 @@ import Footer from './components/footer';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
-import Product from './components/product';
+import Catalog from './components/catalog';
 
 function App() {
   return (
     <div className="App">
       <NavBar></NavBar>
 
+      <Catalog></Catalog>
 
-
-      <h1 className="pogi">Hello World!!!</h1>
-      <Product></Product>
-      <Product></Product>
-      <Product></Product>
-      <Product></Product>
-      <Product></Product>
-      <Product></Product>
-      <Product></Product>
-      <Product></Product>
-
-
-
-
-
-
+      
       <Footer></Footer>
     </div>
   );
