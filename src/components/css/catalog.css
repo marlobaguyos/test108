@@ -1,9 +1,24 @@
 .catalog-page {
   padding-top: 3%;
   background-color: burlywood;
+  padding-bottom: 10%;
 }
 
 .catalog-page h1{
   font-size: 4rem;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding-top: 2%;
+}
+
+.catalogHR {
+  position: relative;
+  border: none;
+  width: 50%;
+  height: 2px;
+  background: black;
+  margin-top: 0%;
+}
+
+.catalogProducts{
+
 }

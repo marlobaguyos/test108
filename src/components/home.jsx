@@ -7,6 +7,7 @@ class Home extends Component {
     return ( 
     <div className="homeMainDiv">
     <h1 className="homeH1">Welcome to Organika store</h1>
+    <hr className="welcomeHR"></hr>
       <div className="homeDiv">
           <img
             src={"/images/products/img-1.jpg"}

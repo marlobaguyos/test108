@@ -10,9 +10,11 @@ class Catalog extends Component {
   render() {
     return (
       <div className="catalog-page">
-        <h1>This is our amazing catalog {this.state.catalog.length} products</h1> 
-        
-        {this.state.catalog.map((p) => (<Product data ={p} ></Product>))}
+        <h1>This is our amazing catalog {this.state.catalog.length} products</h1>
+        <hr className="catalogHR"></hr>
+        <div className="catalogProducts">
+          {this.state.catalog.map((p) => (<Product data ={p} ></Product>))}
+        </div>
       </div>
     );
   }
