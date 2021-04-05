@@ -2,11 +2,11 @@
   border: 1px solid rgb(47, 45, 45);
   display: inline-block;
   width: 350px;
-  height: 600px;
-  margin-top: 4rem;
+  height: 625px;
+  margin-top: 1rem;
   margin-left: 1rem;
   border-radius:10px;
-
+  background-color: white;
 }
 
 .product .image{
@@ -16,26 +16,86 @@
   height: 320px;
 }
 
+.spanContainer{
+  display:inline-block;
 
-.product .labels label{
+}
+
+.prodName{
+  align-items: center;
+  font-size: 2.5rem;
+  margin-bottom: 0%;
+}
+
+.priceTotalCont{
   display: flex;
-  flex-direction: row;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  flex-direction: column;
+  justify-content: space-around;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 1.4rem;
 }
 
-.description {
-  margin-left: 1rem;
-  margin-right: 1rem;
-  margin-top: 1rem;
-  margin-bottom: 0px;
-  font-size:2rem;
+.priceLabel{
+  font-weight: 700;
 }
 
-.total,
-.price {
-  font-weight: bold;
-  margin-bottom: 0px;
-  margin-top:0px;
-  font-size:1rem;
+.price{
+  color: tomato;
 }
+
+.totalLabel{
+  font-weight: 700;
+}
+
+.total{
+  font-weight: 700;
+}
+
+.priceTotalHR{
+  position: relative;
+  border: none;
+  width: 80%;
+  height: 2px;
+  background: black;
+  margin-top: 0%;
+}
+
+.addHR{
+  position: relative;
+  border: none;
+  height: 1px;
+  background: darkgrey;
+  margin-top: 0%;
+}
+
+/* .prodName{
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+} */
+
+/* .spanLabel{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+.spanContainer{
+  display:inline-table;
+
+}
+
+.prodName{
+  align-items: center;
+  font-size: 2.5rem;
+}
+
+
+.total{
+  font-size: 1.5rem;
+  text-align: left;
+}  */
+

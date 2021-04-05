@@ -1,3 +1,9 @@
 .catalog-page {
-  margin-top: 6rem;
+  padding-top: 3%;
+  background-color: burlywood;
+}
+
+.catalog-page h1{
+  font-size: 4rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }

@@ -10,11 +10,10 @@ class QuantityPicker extends Component {
         return (
             <div>
                 <div className="container-button">
-                    <button onClick={this.decreaseQuantity} className="btn btn-lg btn-dark minusbtn">-</button>
+                    <button onClick={this.increaseQuantity} className="btn btn-md btn-dark active">+</button>
                     <label className="numLabel">{this.state.quantity}</label>
-                    <button onClick={this.increaseQuantity} className="btn btn-lg btn-dark plusbtn">+</button>
+                    <button onClick={this.decreaseQuantity} className="btn btn-md btn-dark active">-</button>
                 </div>
-                <button className="btn btn-mb btn-dark">Add</button>
             </div>
         );
     }

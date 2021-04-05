@@ -13,16 +13,28 @@ class Product extends Component {
           className="image"
         ></img>
         <div className="labels">
-          <label className="description">
-            <strong>{this.props.data.title}</strong>
-          </label>
-          <label className="total">
-            Total: ${this.props.data.price}</label>
-          <label className="price">Price: ${this.props.data.price}</label>
+          <span>
+            <label className="prodName"><strong>{this.props.data.title}</strong></label>
+          </span>
+          <hr className="priceTotalHR"></hr>
+          <div className="priceTotalCont">
+            <span>
+              <label className="priceLabel">Price:</label> <label className="price"> ${this.props.data.price}</label>
+            </span>
+            <span>
+              <label className="totalLabel">Total:</label> <label className="total">${this.props.data.price}</label>
+            </span>
+          </div>
         </div>
+        <hr className="addHR"></hr>
         <QuantityPicker></QuantityPicker>
+        <button onClick={this.handleAddToCart} className="btn btn-md btn-dark  active addToCart">Add</button>
       </div>
     );
+  }
+
+  handleAddToCart = () => {
+    console.log("Add 2 cart");
   }
 }
 

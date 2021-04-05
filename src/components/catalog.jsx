@@ -10,7 +10,7 @@ class Catalog extends Component {
   render() {
     return (
       <div className="catalog-page">
-        <h3>This is our amazing catalog {this.state.catalog.length} products</h3> 
+        <h1>This is our amazing catalog {this.state.catalog.length} products</h1> 
         
         {this.state.catalog.map((p) => (<Product data ={p} ></Product>))}
       </div>

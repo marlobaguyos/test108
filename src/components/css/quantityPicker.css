@@ -1,19 +1,19 @@
 .container-button{
-    margin-top: 1rem;
+    display:flex;
+    justify-content: center;
     margin-bottom: 1rem;
+}
+
+.numLabel{
     font-size: 2rem;
-    
+    margin-bottom: 0%;
+    margin-left: .5rem;
+    margin-right: .5rem;
 }
 
-.minusbtn {
-    flex-grow: auto;
-    margin-left: 1rem;
-    margin-right: 1rem;
-}
 
-.plusbtn{
-    flex-grow: auto;
-    margin-left: 1rem;
-    margin-right: 1rem;
-}
+
+
+
+
 
