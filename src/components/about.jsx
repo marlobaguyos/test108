@@ -14,32 +14,38 @@ class About extends Component {
           <p className="lead">This is an FSDI project on React</p>
           <hr className="my-4"></hr>
 
-          {
-            this.state.infoVisible ? (
-              <div>
-                <label className="lead">Email: marlo.baguyos@sdgku.edu</label>
-                <label className="lead">Phone: marlo.baguyos@sdgku.edu</label>
-              </div>
-            ) : (
-              <label>Click for more info</label>
-            )
-            
-
-          }
-          <div className="aboutDiv">
-            
+          {this.getPersonalInfo()}
+          <div>
+          <button onClick={this.handleButtonClick} className="btn btn-primary btn-lg" href="#" role="button" >Learn more</button>
           </div>
-          <a onClick={this.handleButtonClick} className="btn btn-primary btn-lg" href="#" role="button" >Learn more</a>
         </div>
       </div>
     );
   }
 
+  getPersonalInfo = () => {
+    if (this.state.infoVisible){
+      return (
+        <div className="aboutDiv">
+          <label className="lead">Email: marlo.baguyos@sdgku.edu</label>
+          <label className="lead">Phone: marlo.baguyos@sdgku.edu</label>
+        </div>
+      )
+    }else {
+      return (
+        <label>Click the button to get more info</label>
+      )
+    }
+  };
 
   handleButtonClick = () => {
-    console.log("More Info")
-      
-  }
+    if(this.state.infoVisible = true){
+      this.setState({infoVisible: true})
+    }
+    else {
+    this.setState({infoVisible: false})
+    }
+  };
   
 }
 export default About;
