@@ -7,6 +7,7 @@ import 'font-awesome/css/font-awesome.min.css';
 import Catalog from './components/catalog';
 import Home from './components/home';
 import { BrowserRouter, Switch, Route } from "react-router-dom";
+import About from './components/about';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/" exact component={Home}></Route>
             <Route path="/home" exact component={Home}></Route>
             <Route path="/catalog" exact component={Catalog}></Route>
+            <Route path="/about" exact component={About}></Route>
         </Switch>
         
         <Footer></Footer>
