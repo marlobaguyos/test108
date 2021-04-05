@@ -13,17 +13,19 @@ class About extends Component {
             <p className="lead">Email: marlo.baguyos@sdgku.edu</p>
             <p className="lead">Phone: marlo.baguyos@sdgku.edu</p>
           </div>
-          <a className="btn btn-primary btn-lg" href="#" role="button" onClick={this.clickEvent}>Learn more</a>
+          <a onClick={this.handleButtonClick} className="btn btn-primary btn-lg" href="/about" role="button" >Learn more</a>
         </div>
       </div>
     );
   }
-}
 
-clickEvent = () => {
-  console.log("button clicked");
-}
 
+  handleButtonClick = () => {
+    console.log("button is clicked")
+      
+  }
+  
+}
 export default About;
 
 
