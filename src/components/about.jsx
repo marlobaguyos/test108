@@ -9,15 +9,27 @@ class About extends Component {
           <h1 className="display-4">Marlo Baguyos</h1>
           <p className="lead">This is an FSDI project on React</p>
           <hr className="my-4"></hr>
-          <p className="lead">
-            <label>Email: marlo.baguyos@sdgku.edu</label>
-            <label>Phone: marlo.baguyos@sdgku.edu</label>
-            <a className="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-          </p>
+          <div className="aboutDiv">
+            <p className="lead">Email: marlo.baguyos@sdgku.edu</p>
+            <p className="lead">Phone: marlo.baguyos@sdgku.edu</p>
+          </div>
+          <a className="btn btn-primary btn-lg" href="#" role="button" onClick={this.clickEvent}>Learn more</a>
         </div>
       </div>
     );
   }
 }
 
+clickEvent = () => {
+  console.log("button clicked");
+}
+
 export default About;
+
+
+/*
+1. catch click event
+2. call a function that
+3. console.log("more info")
+
+*/

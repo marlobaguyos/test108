@@ -1,3 +1,18 @@
 .aboutH1 {
   margin-top: 4%;
 }
+
+/* .lead {
+  display: flex;
+  justify-content: center;
+} */
+
+/* .lead label{
+  margin-left: 4rem;
+} */
+
+
+.aboutDiv {
+  display: flex;
+  justify-content: space-evenly;
+}
