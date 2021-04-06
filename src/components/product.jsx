@@ -55,13 +55,12 @@ class Product extends Component {
   };
 
   handleAddToCart = () => {
-    console.log("Add 2 cart");
     //dispatch the action
     var prodInCart = {
-      product: this.prods.data,
+      product: this.props.data,
       quantity: this.state.quantity
     };
-    this.props.addProductToCart();
+    this.props.addProductToCart(prodInCart);
   };
 }
 
