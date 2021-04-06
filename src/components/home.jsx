@@ -8,6 +8,8 @@ class Home extends Component {
     <div className="homeMainDiv">
     <h1 className="homeH1">Welcome to Organika store</h1>
     <hr className="welcomeHR"></hr>
+    <hr className="welcomeHR1"></hr>
+    <hr className="welcomeHR2"></hr>
       <div className="homeDiv">
           <img 
             src={"/images/products/img-1.jpg"} 

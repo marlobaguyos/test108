@@ -7,7 +7,7 @@
 .welcomeHR {
   position: relative;
   border: none;
-  width: 90%;
+  width: 60%;
   height: 2px;
   background: rgb(58, 55, 55);
   margin-top: 0%;
@@ -26,4 +26,22 @@
     border-radius: 10px;
     width: 300px;
     height: 350px;
+}
+
+.welcomeHR1 {
+  position: relative;
+  border: none;
+  width: 30%;
+  height: 2px;
+  background: rgb(58, 55, 55);
+  margin-top: 0%;
+}
+
+.welcomeHR2 {
+  position: relative;
+  border: none;
+  width: 15%;
+  height: 2px;
+  background: rgb(58, 55, 55);
+  margin-top: 0%;
 }
