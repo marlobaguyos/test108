@@ -2,7 +2,18 @@
 // should return a NEW State
 
 const cartReducer = (state = [], action) => {
-  return state;
+  switch (action.type) 
+  {
+    case 'ADD_PRODUCT':
+      var copy = [...state];
+      copy.push(action.payload);
+      return copy;
+    case 'REMOVE_PRODUCT':
+      //here
+      break;
+    default:
+      return state;
+  }
 };
 
 export default cartReducer;
