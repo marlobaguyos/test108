@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Product from "./product";
-import ProductService from "./services/productService.js";
+import ProductService from "../services/productService.js";
 import "./css/catalog.css";
 
 class Catalog extends Component {
