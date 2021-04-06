@@ -60,14 +60,23 @@
   margin-top: 0%;
 }
 
-.addHR{
+.addButton{
+  margin: auto;
+}
+
+/* .addHR{
   position: relative;
   border: none;
   height: 1px;
   background: darkgrey;
   margin-top: 0%;
   margin-top: 0%;
-}
+} */
+
+/* .container-button{
+  display:flex;
+  justify-content:center;
+} */
 
 /* .prodName{
   display: flex;
