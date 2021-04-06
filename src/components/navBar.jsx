@@ -21,7 +21,7 @@ class NavBar extends Component {
                             </li>
                         </ul>
                         <span class="form-inline my-2 my-lg-0">
-                            <button button type="button" class="btn btn-secondary my-2 my-sm-0" type="submit">View Cart</button>
+                            <a href="#" class="btn btn-secondary btn-md active" role="button" aria-pressed="true">View Cart: {this.props.cart.length}</a>
                         </span>
                     </div>
                 </nav>
