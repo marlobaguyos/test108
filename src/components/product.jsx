@@ -4,13 +4,16 @@ import QuantityPicker from "./quantityPicker";
 import "./css/product.css";
 
 class Product extends Component {
-  state = {};
+  state = {
+    quantity: 1,
+  };
+
   render() {
     return (
       <div className="product">
         <img
           src={"/images/products/" + this.props.data.image}
-          className="image"
+          className="image" alt="available product"
         ></img>
         <div className="labels">
           <span>
@@ -22,19 +25,22 @@ class Product extends Component {
               <label className="priceLabel">Price:</label> <label className="price"> ${this.props.data.price}</label>
             </span>
             <span>
-              <label className="totalLabel">Total:</label> <label className="total">${this.props.data.price}</label>
+              <label className="totalLabel">Total:</label> <label className="total">${this.props.data.price * this.state.quantity}</label>
             </span>
           </div>
         </div>
         <hr className="addHR"></hr>
+        
         <QuantityPicker onValueChange={this.handleQuantityChange}></QuantityPicker>
+
         <button onClick={this.handleAddToCart} className="btn btn-md btn-dark  active addToCart">Add</button>
       </div>
     );
   }
 
-  handleQuantityChange = () => {
-    console.log("Quantity Changed");
+  handleQuantityChange = (qnty) => {
+    console.log("Quantity Changed to " + qnty);
+    this.setState({quantity:qnty});
   };
 
   handleAddToCart = () => {
