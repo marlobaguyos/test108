@@ -22,10 +22,10 @@ class Product extends Component {
           <hr className="priceTotalHR"></hr>
           <div className="priceTotalCont">
             <span>
-              <label className="priceLabel">Price:</label> <label className="price"> ${this.props.data.price}</label>
+              <label className="priceLabel">Price:</label> <label className="price"> ${(this.props.data.price).toFixed(2)}</label>
             </span>
             <span>
-              <label className="totalLabel">Total:</label> <label className="total">${this.props.data.price * this.state.quantity}</label>
+              <label className="totalLabel">Total:</label> <label className="total">${(this.props.data.price * this.state.quantity).toFixed()}</label>
             </span>
           </div>
         </div>

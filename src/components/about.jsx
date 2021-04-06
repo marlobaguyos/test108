@@ -16,7 +16,7 @@ class About extends Component {
 
           {this.getPersonalInfo()}
           <div className="buttonDiv">
-            <button onClick={this.handleButtonClick} className="btn btn-primary btn-lg" href="/" >Learn more</button>
+            <button onClick={this.handleButtonClick} className="btn btn-primary btn-lg" href="" >Learn more</button>
           </div>
         </div>
       </div>
