@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import QuantityPicker from "./quantityPicker";
 
 import "./css/product.css";
+import { connect } from "react-redux";
+import { addProductToCart } from "../store/action/action";
 
 class Product extends Component {
   state = {
@@ -54,7 +56,18 @@ class Product extends Component {
 
   handleAddToCart = () => {
     console.log("Add 2 cart");
+    //dispatch the action
+    var prodInCart = {
+      product: this.prods.data,
+      quantity: this.state.quantity
+    };
+    this.props.addProductToCart();
   };
 }
 
-export default Product;
+//connect 2 params:
+// 1 - what to ready
+// 2 - actions to dispatch
+export default connect(null, {addProductToCart})(Product);
+
+
