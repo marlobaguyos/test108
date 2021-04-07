@@ -1,36 +1,47 @@
-import React, { Component } from 'react';
-import {connect} from "react-redux";
+import React, { Component } from "react";
+import { connect } from "react-redux";
 
 class NavBar extends Component {
-    state = {  }
-    render() { 
-        return (
-            <div>
-                <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
-                <label class="navbar-brand" href="/">Lapu Lapu</label>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav mr-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/catalog">Catalog</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="/about">About</a>
-                            </li>
-                        </ul>
-                        <span class="form-inline my-2 my-lg-0">
-                            <a href="#" class="btn btn-secondary btn-md active" role="button" aria-pressed="true">View Cart: {this.props.cart.length}</a>
-                        </span>
-                    </div>
-                </nav>
+  state = {};
+  render() {
+    return (
+      <div>
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+          <label class="navbar-brand" href="/">
+            Lapu Lapu
+          </label>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="/">
+                  Home <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/catalog">
+                  Catalog
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="/about">
+                  About
+                </a>
+              </li>
+            </ul>
+            <span class="form-inline my-2 my-lg-0">
+              <a
+                href="/cart"
+                class="btn btn-secondary btn-md active"
+                role="button"
+                aria-pressed="true"
+              >
+                View Cart: {this.props.cart.length}
+              </a>
+            </span>
+          </div>
+        </nav>
 
-
-
-
-
-                {/* <nav className="navbar navbar-dark bg-dark fixed-top  navbar-expand-lg">
+        {/* <nav className="navbar navbar-dark bg-dark fixed-top  navbar-expand-lg">
                     <div className="container-fluid">
                         <label className="navbar-brand" href="/">Lapu Lapu</label>
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -56,15 +67,15 @@ class NavBar extends Component {
                         </div>
                     </div>
                 </nav> */}
-            </div>
-        );
-    }
+      </div>
+    );
+  }
 }
 
 const mapStateToProps = (state) => {
-    return{
-        cart: state
-    };
+  return {
+    cart: state,
+  };
 };
 //read: pass a fn that maps the state to props
-export default connect(mapStateToProps,null)(NavBar);
+export default connect(mapStateToProps, null)(NavBar);

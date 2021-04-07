@@ -12,7 +12,7 @@ import {
   Route
 } from "react-router-dom";
 import About from './components/about';
-import Cart from './components/cart'
+import Cart from './components/cart';
 
 
 function App() {
