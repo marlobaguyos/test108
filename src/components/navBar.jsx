@@ -14,24 +14,24 @@ class NavBar extends Component {
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item active">
-                <a class="nav-link" href="/">
+                <Link class="nav-link" to="/">
                   Home <span class="sr-only">(current)</span>
-                </a>
+                </Link>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/catalog">
+                <Link class="nav-link" to="/catalog">
                   Catalog
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/about">
+                <Link className="nav-link" to="/about">
                   About
-                </a>
+                </Link>
               </li>
             </ul>
             
               <Link class="form-inline my-2 my-lg-0" to="/cart">
-                <label class="btn btn-secondary btn-md active">
+                <label class="btn btn-secondary btn-md">
                   View Cart:&ensp;  
                   <span className="badge badge-dark cart-badge">{this.props.cart.length}</span>
                 </label>

@@ -5,6 +5,7 @@ class ProductInCart extends Component {
     return (
       <div className="productCart">
         <h3>I'm a product</h3>
+        {this.props.data.product}
       
       </div>
     );
