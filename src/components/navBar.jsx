@@ -29,16 +29,18 @@ class NavBar extends Component {
                 </a>
               </li>
             </ul>
-            <span class="form-inline my-2 my-lg-0">
-              <a
-                href="/cart"
-                class="btn btn-secondary btn-md active"
-                role="button"
-                aria-pressed="true"
-              >
-                View Cart: {this.props.cart.length}
-              </a>
-            </span>
+            
+              <Link class="form-inline my-2 my-lg-0">
+                <i
+                  href="/cart"
+                  class="btn btn-secondary btn-md active"
+                  role="button"
+                  aria-pressed="true"
+                >
+                  View Cart:&ensp;  
+                  <span className="badge badge-dark cart-badge">{this.props.cart.length}</span>
+                </i>
+              </Link>
           </div>
         </nav>
 
