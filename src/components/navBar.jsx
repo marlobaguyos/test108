@@ -45,7 +45,7 @@ class NavBar extends Component {
 
 const mapStateToProps = (state) => {
   return {
-    cart: state,
+    cart: state
   };
 };
 //read: pass a fn that maps the state to props
