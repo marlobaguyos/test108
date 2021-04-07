@@ -10,7 +10,7 @@ class Cart extends Component {
       <div>
         <h1>Your Cart</h1>
         {this.props.cart.map((item) => (
-          <ProductInCart key={item.product.id}></ProductInCart>
+          <ProductInCart key={item.product.id} data={item}></ProductInCart>
         ))}
       </div>
     );
