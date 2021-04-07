@@ -30,46 +30,14 @@ class NavBar extends Component {
               </li>
             </ul>
             
-              <Link class="form-inline my-2 my-lg-0">
-                <i
-                  href="/cart"
-                  class="btn btn-secondary btn-md active"
-                  role="button"
-                  aria-pressed="true"
-                >
+              <Link class="form-inline my-2 my-lg-0" to="/cart">
+                <label class="btn btn-secondary btn-md active">
                   View Cart:&ensp;  
                   <span className="badge badge-dark cart-badge">{this.props.cart.length}</span>
-                </i>
+                </label>
               </Link>
           </div>
         </nav>
-
-        {/* <nav className="navbar navbar-dark bg-dark fixed-top  navbar-expand-lg">
-                    <div className="container-fluid">
-                        <label className="navbar-brand" href="/">Lapu Lapu</label>
-                        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon"></span>
-                        </button>
-                        <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                                <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="/">Home</a>
-                                </li>
-                                <li className="nav-item">
-                                <a className="nav-link" href="/catalog">Catalog</a>
-                                </li>
-                                <li className="nav-item">
-                                <a className="nav-link" href="/about">About</a>
-                                </li>
-                            </ul>
-                            <form class="form-inline my-2 my-lg-0">
-                                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"></input>
-                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                            </form>
-                            View Cart: {this.props.cart.length}
-                        </div>
-                    </div>
-                </nav> */}
       </div>
     );
   }

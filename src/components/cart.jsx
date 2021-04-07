@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 
 class Cart extends Component {
   state = {};
+  
   render() {
     return (
       <div>
@@ -12,4 +13,8 @@ class Cart extends Component {
   }
 }
 
-export default connect()(Cart);
+var mapStateToProps =(state) => {
+
+};
+
+export default connect(mapStateToProps,null)(Cart);
