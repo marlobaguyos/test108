@@ -1,13 +1,14 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import ProductInCart from "./productInCart";
+import "./css/cart.css";
 
 class Cart extends Component {
   state = {};
 
   render() {
     return (
-      <div>
+      <div className="cart">
         <h1>Your Cart</h1>
         {this.props.cart.map((item) => (
           <ProductInCart key={item.product.id} data={item}></ProductInCart>
