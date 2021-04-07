@@ -1,19 +1,18 @@
-import './App.css';
-import NavBar from './components/navBar';
-import Footer from './components/footer';
+import "./App.css";
+import NavBar from "./components/navBar";
+import Footer from "./components/footer";
 
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'font-awesome/css/font-awesome.min.css';
-import Catalog from './components/catalog';
-import Home from './components/home';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "font-awesome/css/font-awesome.min.css";
+import Catalog from "./components/catalog";
+import Home from "./components/home";
 import {
   BrowserRouter,
   Switch,
   Route
 } from "react-router-dom";
-import About from './components/about';
-import Cart from './components/cart';
-
+import About from "./components/about";
+import Cart from "./components/cart";
 
 function App() {
   return ( <
@@ -21,9 +20,7 @@ function App() {
     <
     div className = " container-fluid App" >
     <
-    NavBar > < /NavBar>
-
-    <
+    NavBar > < /NavBar> <
     Switch >
     <
     Route path = "/"
@@ -46,13 +43,11 @@ function App() {
     exact component = {
       Cart
     } > < /Route> <
-    /Switch>
-
-    <
+    /Switch> <
     Footer > < /Footer> <
     /div> <
     /BrowserRouter>
   );
 }
-dfasd
+dfasd;
 export default App;
