@@ -9,10 +9,24 @@ class Cart extends Component {
   render() {
     return (
       <div className="cart">
-        <h1>Your Cart</h1>
-        {this.props.cart.map((item) => (
-          <ProductInCart key={item.product.id} data={item}></ProductInCart>
-        ))}
+        <div>
+          <div className="carth1">
+            <h1>Organika</h1>
+          </div>
+
+          <div className="contCart">
+            <div className="hoy">
+              fasdfasdfasd
+            </div>
+
+            <div className="hey">
+              {this.props.cart.map((item) => (
+                <ProductInCart key={item.product.id} data={item}></ProductInCart>
+              ))}
+              kladfalsdkfjasd
+            </div>
+          </div>
+        </div>
       </div>
     );
   }

@@ -14,9 +14,9 @@ class Catalog extends Component {
         <hr className="catalogHR"></hr>
         <hr className="catalogHR1"></hr>
         <hr className="catalogHR2"></hr>
-        <div className="catalogProducts">
-          {this.state.catalog.map((p) => (<Product data ={p} ></Product>))}
-        </div>
+          <div className="catalogProducts">
+            {this.state.catalog.map((p) => (<Product data ={p} ></Product>))}
+            </div>
       </div>
     );
   }

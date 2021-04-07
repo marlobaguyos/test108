@@ -13,8 +13,8 @@ class Footer extends Component {
                     </div>
                     <label className="footer-name">Marlo Baguyos.</label>
                 </div> */}
-        <div>
-          <footer className="navbar navbar-expand-lg navbar-light bg-light navbar navbar-dark bg-dark fixed-bottom">
+        <div className="myFooter">
+          <footer className="navbar navbar-expand-lg navbar-dark bg-dark fixed-bottom">
             <div className="container-fluid">
               <div>
                 <p className="navbar-brand">Lapu Lapu</p>

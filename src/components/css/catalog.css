@@ -1,10 +1,16 @@
 .catalog-page {
-  background-color: burlywood;
+    display: flex;
+    flex-direction: column;
+    background-color: burlywood;
+    padding-bottom: 10%;
+    padding-top: 5%;
+    align-items: center;
 }
 
 .catalog-page h1{
   font-size: 4rem;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
 }
 
 .catalogHR {
@@ -17,7 +23,15 @@
 }
 
 .catalogProducts{
-  padding-top: 2%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: auto;
+
+}
+
+.pangit{
+  background-color: rgb(30, 5, 167);
 }
 
 .catalogHR1 {
@@ -27,6 +41,7 @@
   height: 2px;
   background: black;
   margin-top: 0%;
+  
 }
 
 .catalogHR2 {

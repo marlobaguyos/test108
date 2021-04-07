@@ -13,7 +13,7 @@ import Cart from "./components/cart";
 function App() {
   return (
     <BrowserRouter>
-      <div className=" container-fluid App">
+      <div className="App">
         <NavBar> </NavBar>
         <Switch>
           <Route path="/" exact component={Home}></Route>

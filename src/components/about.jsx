@@ -8,7 +8,7 @@ class About extends Component {
 
   render() {
     return (
-      <div>
+      <div className="pangit">
         <div className="jumbotron">
           <h1 className="display-4">Marlo Baguyos</h1>
           <p className="lead">This is an FSDI project on React</p>

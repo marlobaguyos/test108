@@ -12,32 +12,34 @@ class Product extends Component {
 
   render() {
     return (
-      <div className="product">
-        <img
-          src={"/images/products/" + this.props.data.image}
-          className="image" alt="available product"
-        ></img>
-        <div className="labels">
-          <span>
-            <label className="prodName"><strong>{this.props.data.title}</strong></label>
-          </span>
-          <hr className="priceTotalHR"></hr>
-          <div className="priceTotalCont">
+      <div className="productCont">
+        <div className="product">
+          <img
+            src={"/images/products/" + this.props.data.image}
+            className="image" alt="available product"
+          ></img>
+          <div className="labels">
             <span>
-              <label className="priceLabel">Price:</label> <label className="price"> ${this.props.data.price.toFixed(2)}</label>
+              <label className="prodName"><strong>{this.props.data.title}</strong></label>
             </span>
-            <span>
-              <label className="totalLabel">Total:</label> <label className="total">${this.calculateTotal()}</label>
-            </span>
+            <hr className="priceTotalHR"></hr>
+            <div className="priceTotalCont">
+              <span>
+                <label className="priceLabel">Price:</label> <label className="price"> ${this.props.data.price.toFixed(2)}</label>
+              </span>
+              <span>
+                <label className="totalLabel">Total:</label> <label className="total">${this.calculateTotal()}</label>
+              </span>
+            </div>
           </div>
-        </div>
-        <div className="container container-button">
-          <QuantityPicker
-          minimum={this.props.data.minimum || 1}
-          onValueChange={this.handleQuantityChange}
-          ></QuantityPicker>
-          <div className="input-group mb-3 container-button">
-            <button onClick={this.handleAddToCart} className="btn btn-md btn-dark active addButton">Add</button>
+          <div className="container container-button">
+            <QuantityPicker
+            minimum={this.props.data.minimum || 1}
+            onValueChange={this.handleQuantityChange}
+            ></QuantityPicker>
+            <div className="input-group mb-3 container-button">
+              <button onClick={this.handleAddToCart} className="btn btn-md btn-dark active addButton">Add</button>
+            </div>
           </div>
         </div>
       </div>
