@@ -4,7 +4,7 @@
     background-color: burlywood;
     padding-bottom: 10%;
     padding-top: 5%;
-    align-items: center;
+
 }
 
 .catalog-page h1{
@@ -23,11 +23,13 @@
 }
 
 .catalogProducts{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  margin: auto;
-
+  display: grid;
+  width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap:20px; /* even spacing using grid-gap, You can use percentage values if you want*/
+    padding:20px;
+  
 }
 
 .pangit{

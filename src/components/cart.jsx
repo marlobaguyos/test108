@@ -11,12 +11,13 @@ class Cart extends Component {
       <div className="cart">
         <div>
           <div className="carth1">
-            <h1>Organika</h1>
+          <h1>Your</h1>
+            <img src="/images/icons/cart.svg" altwidth="50" height="45" alt="picture of a"></img>
           </div>
 
           <div className="contCart">
             <div className="hoy">
-              fasdfasdfasd
+              Your Cart
             </div>
 
             <div className="hey">
