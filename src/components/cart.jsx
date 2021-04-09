@@ -16,10 +16,6 @@ class Cart extends Component {
           </div>
 
           <div className="contCart">
-            <div className="hoy">
-              Your Cart
-            </div>
-
             <div className="hey">
               {this.props.cart.map((item) => (
                 <ProductInCart key={item.product.id} data={item}></ProductInCart>

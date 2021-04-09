@@ -6,15 +6,17 @@ class ProductInCart extends Component {
   render() { 
     return (
       <div className="productInCart">
-        <div>
+        <div className="imagesCont">
           <img 
           className="image"
           src={"/images/products/" + this.props.data.product.image}
           alt="Product"
           ></img>
-          <label>{this.props.data.product.title}</label>
         </div>
         <div>
+          <label>{this.props.data.product.title}</label>
+          <label>{this.props.data.product.price}</label>
+          <label>{this.props.data.product.category}</label>
           <p>{this.props.data.quantity}</p>
         </div>
       </div>
