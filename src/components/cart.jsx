@@ -9,21 +9,28 @@ class Cart extends Component {
   render() {
     return (
       <div className="cart">
+
         <div>
+
           <div className="carth1">
           <h1>Your</h1>
             <img src="/images/icons/cart.svg" altwidth="50" height="45" alt="picture of a"></img>
           </div>
+          
+            <div className="contCart">
 
-          <div className="contCart">
-            <div className="hey">
-              {this.props.cart.map((item) => (
-                <ProductInCart key={item.product.id} data={item}></ProductInCart>
-              ))}
-              kladfalsdkfjasd
+              <div className="hey">
+                {this.props.cart.map((item) => (
+                  <ProductInCart key={item.product.id} data={item}></ProductInCart>
+                ))}
+              </div>
+              <div className="cartBuy">
+                <button type="button" class="btn btn-secondary btn-lg btn-block">Buy</button>
+              </div>
             </div>
-          </div>
+
         </div>
+
       </div>
     );
   }

@@ -1,7 +1,7 @@
 .catalog-page {
     display: flex;
     flex-direction: column;
-    background-color: burlywood;
+    background-color: dce0dd;
     padding-bottom: 10%;
     padding-top: 5%;
 
@@ -25,10 +25,10 @@
 .catalogProducts{
   display: grid;
   width: 100%;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap:20px; /* even spacing using grid-gap, You can use percentage values if you want*/
-    padding:20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap:20px; /* even spacing using grid-gap, You can use percentage values if you want*/
+  padding:20px;
   
 }
 
